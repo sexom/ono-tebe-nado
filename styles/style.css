@@ -1,1 +1,108 @@
 /* место для вашего кода */
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 92px 24px 96px;
+  /* background-color: blueviolet; */
+  line-height: 21.13px;
+  font-size: 18px;
+}
+
+.header__content {
+  /* background-color: beige; */
+  display: flex;
+  justify-content: space-between;
+  width: 1052px;
+  height: 105px;
+}
+
+/* меню header */
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 26.52px;
+  padding-top: 5.5px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: circle;
+  gap: 1.8rem;
+}
+
+.item-general a{
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+.item-look-on-lots {
+  margin-left: 4px;
+}
+
+.item-about {
+  margin-left: 5px;
+}
+
+.item-look-on-lots,
+.item-about {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 0.1px;
+}
+
+/* лого header */
+
+.header__logo-img {
+  width: 137px;
+  margin-right: 150px;
+}
+
+/* связь header */
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* background-color: red; */
+  padding-right: 62px;
+  gap: 3px;
+}
+
+.header__contacts-link-active {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 1;;
+}
+
+
+.cover {
+  width: 100%;
+  height: 757px;
+}
+
+.lots {
+  width: 1052px;
+  height: 692px;
+}
+
+.about {
+  width: 1052px;
+  height: 595px;
+}
+
+.footer {
+  width: 1000px;
+  height: 98px;
+}

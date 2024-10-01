@@ -40,10 +40,12 @@
   gap: 1.8rem;
 }
 
-.item-general a{
+.item-general {
   list-style: none;
+}
+
+.item-general a{
   text-decoration: none;
-  
 }
 
 .item-look-on-lots {
@@ -66,6 +68,7 @@
 .header__logo-img {
   width: 137px;
   margin-right: 150px;
+  cursor: pointer;
 }
 
 /* связь header */
@@ -83,19 +86,221 @@
 .header__contacts-link-active {
   text-decoration: underline;
   text-underline-position: under;
-  text-underline-offset: 1;;
+  text-underline-offset: 1px;
 }
 
+/* main */
+
+/* cover */
+
+/* cover title и всё с этим*/
 
 .cover {
-  width: 100%;
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 757px;
+  display: flex;
+  flex-direction: column;
 }
 
-.lots {
-  width: 1052px;
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.cover__title {
+  color: white;
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+  padding-top: 165px;
+  padding-left: 50px;
+}
+
+.accent-span {
+  display: block;
+}
+
+.letter-o {
+  margin-left: -23px;
+}
+
+.text-center {
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 60%;
+  padding-top: 12px;
+  position: relative;
+  right: 26px;
+}
+
+.letter-e {
+  position: relative;
+  right: 25px;
+  /* margin-right: 50px; */
+}
+
+.text-right {
+  text-align: end;
+  text-wrap: nowrap;
+  padding-top: 6px;
+  letter-spacing: 31px;
+  position: relative;
+  left: 9px;
+}
+
+.letter-n {
+  position: relative;
+  left: 24px;
+}
+
+/* cover description и button */
+
+.cover__description {
+  padding-top: 127px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover__description-text {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 80px;
+  word-spacing: 18.5px;
+} 
+
+.bet-button-container {
+  padding-right: 50px;
+}
+
+.bet-button {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.83px;
+  text-align: center;
+  text-wrap: nowrap;
+  border: 1.5px solid white;
+  padding: 12px 31px 11px 32px;
+  cursor: pointer;
+}
+
+/* lots */
+
+.lots { 
+  padding: 174px 24px 146px;
   height: 692px;
 }
+
+.lots__heading {
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+
+  padding-left: 40px;
+  padding-top: 5px;
+}
+
+.card {
+  width: 334px;
+  height: 563px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.card__card-list {
+  display: flex;
+  flex-grow: 1;
+  list-style-type: none;
+  gap: 25px;
+  padding-top: 26px;
+
+}
+
+
+.card__title {
+  color: white;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+
+  text-align: left;
+  text-decoration: underline;
+
+  padding-left: 40px;
+  padding-top: 51px;
+
+  text-transform: uppercase;
+
+}
+
+.card__text {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+  color: white;
+}
+
+.card_type_film {
+  background-image: url(/images/card-lot-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card_type_picture {
+  background-image: url(/images/card-lot-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  cursor: pointer;
+}
+
+.card_type_book {
+  background-image: url(/images/card-lot-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  cursor: pointer;
+}
+
+.lots__look-more-link {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 33px;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 0.1px;
+  cursor: pointer;
+}
+
 
 .about {
   width: 1052px;

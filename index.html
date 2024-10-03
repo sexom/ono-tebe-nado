@@ -12,51 +12,50 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <adrticle class="header__menu">
+        <article class="header__menu">
           <nav class="header__nav">
             <ul class="header__nav-list">
-              <li class="item-general header__nav-list-item">
-                <a href="#0">
+              <li class="header__nav-list-item-general">
+                <a href="#0" class="header__link-general">
                     главная
                 </a>
-              </li>    
-              <li class="item-look-on-lots header__nav-list-item">
+              </li>
+              <li class="header__item-look-on-lots">
                 <a href="#0">
                   посмотреть лоты
                 </a>
               </li>
-              <li class="item-about header__nav-list-item">
+              <li class="header__item-about">
                 <a href="#0">
                   об аукционе
                 </a>
               </li>
             </ul>
           </nav>
-        </adrticle>
-        <article class="header__logo">
-          <a>
-            <img 
-            class="header__logo-img" 
-            src="./images/logo-black.svg" 
-            alt="оно тебе надо">
-          </a>
         </article>
+        <a class="header__logo">
+          <img 
+          class="header__logo-img" 
+          src="./images/logo-black.svg" 
+          alt="оно тебе надо">
+        </a>
         <article class="addres">
-          <a 
-          class="addres-link-active" 
-          href="tel:+99995555555">
-          +9 999 555 5555
-          </a>
-          <a 
-          class="addres-link-active" 
-          href="mailto:info@sobaka.ge">
-          info@sobaka.ge
-          </a>
-          <div 
-          class="addres-link">
-          наб. Принсенграхт 263-<br>
-          265, Амстердам
-          </div>
+          <ul class="addres__list">
+            <li class="addres__list-item-active">
+              <a href="tel:+99995555555">
+              +9 999 555 5555
+              </a>
+            </li>
+            <li class="addres__list-item-active">
+              <a href="mailto:info@sobaka.ge">
+              info@sobaka.ge
+              </a>
+            </li>
+            <li class="addres__item">
+              наб. Принсенграхт 263-<br>
+              265, Амстердам
+            </li>
+          </ul>
         </article>
       </div>
     </header>
@@ -70,10 +69,15 @@
             </span>
             <span class="accent-span text-center">
               ТЕБ
-              <span class="letter-e">Е</span>
-            <span class="accent-span text-right">
-              <span class="letter-n">Н</span>
-              АДО
+              <span class="letter-e">
+                Е
+              </span>
+              <span class="accent-span text-right">
+                <span class="letter-n">
+                Н
+                </span>
+                АДО
+              </span>
             </span>
           </h1>
           <aside class="cover__description">
@@ -90,9 +94,9 @@
       </section>
       <section class="lots content-section">
         <h2 class="lots__heading">ЛОТЫ</h2>
-        <ul class="card__card-list">
+        <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <div class="card_type_film">
+            <div class="card_type-film">
               <a class="card-link">
                 <div class="overlay">
                   <article class="card">
@@ -109,8 +113,9 @@
               </a>
             </div>
           </li>
+          
           <li class="lots__card-list-item">
-            <div class="card_type_book">
+            <div class="card_type-book">
               <a class="card-link">
                 <div class="overlay">
                   <article class="card">
@@ -133,7 +138,7 @@
             </div>
           </li>
           <li class="lots__card-list-item">
-            <div class="card_type_picture">
+            <div class="card_type-picture">
               <a class="card-link">
                 <div class="overlay">
                   <article class="card">
@@ -166,7 +171,7 @@
           <img
           class="about__logo-image"
           src="/images/logo-white.svg" 
-          alt="оно тебе надо лого">
+          alt="оно тебе надо">
         </div>
         <div class="about__info">
           <h4 class="about__title">
@@ -179,7 +184,8 @@
             на один аукцион. Потому что кому нужен дневник 
             девочки-подростка или картина, которую может 
             нарисовать даже ребёнок? Кому нужны все эти 
-            странные вещи, созданные любителями?
+            странные вещи, созданные любителями
+            
           </p>
           <p class="about__text about__text-second">
             Слишком сложные или, наоборот, слишком простые. 
@@ -196,21 +202,22 @@
     </main>
     <footer class="footer">
       <article class="addres">
-        <a 
-        class="addres-link-active" 
-        href="tel:+99995555555">
-        <p>+9 999 555 5555</p>
-        </a>
-        <a 
-        class="addres-link-active" 
-        href="mailto:info@sobaka.ge">
-        <p>info@sobaka.ge</p>
-        </a>
-        <p 
-        class="addres-link">
-        наб. Принсенграхт 263-<br>
-        265, Амстердам
-        </p>
+        <ul class="addres__list">
+          <li class="addres__list-item-active">
+            <a href="tel:+99995555555">
+            +9 999 555 5555
+            </a>
+          </li>
+          <li class="addres__list-item-active">
+            <a href="mailto:info@sobaka.ge">
+            info@sobaka.ge
+            </a>
+          </li>
+          <li class="addres__item">
+            наб. Принсенграхт 263-<br>
+            265, Амстердам
+          </li>
+        </ul>
       </article>
       <nav class="footer__menu">
         <ul class="footer__menu-list">

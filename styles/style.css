@@ -103,7 +103,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);  
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -233,9 +233,9 @@
   line-height: 26.4px;
   text-align: left;
   text-decoration: underline;
+  text-transform: uppercase;
   padding-left: 40px;
   padding-top: 51px;
-  text-transform: uppercase;
 
 }
 
@@ -261,7 +261,7 @@
 
 .card_type-picture {
   background-image: url(/images/card-lot-03.jpg);
-  background-size: cover;  
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -269,7 +269,7 @@
 
 .card_type-book {
   background-image: url(/images/card-lot-02.jpg);
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -322,7 +322,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
-  text-transform: uppercase;
+  text-transform: uppercase;  
   height: 145px;
 }
 

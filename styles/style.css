@@ -192,22 +192,10 @@
   padding-top: 5px;
 }
 
-.card-item {
-  position: relative;
-}
-
-.card-background {
-  position: absolute;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-} 
-
-.card {
+.card__content {
   min-height: 563px;
   display: flex;
   position: relative;
-  z-index: 2;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -258,6 +246,18 @@
   line-height: 23.48px;
   padding-left: 40px;
   cursor: pointer;
+}
+
+.card__type-film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card__type-book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card__type-painting {
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 /* about */
